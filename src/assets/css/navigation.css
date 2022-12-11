@@ -1,0 +1,97 @@
+nav {
+    height: 60px;
+    width: 100%;
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+nav ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    box-shadow: 2px 2px 2px #ccc;
+    z-index: 1;
+}
+
+nav ul figure {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+nav ul a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+nav ul i {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+nav ul li {
+    height: 3em;
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+nav li:hover {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+    animation: line 2.5s;
+}
+
+.logo {
+    width: 3em;
+}
+
+@media screen and (max-width: 759px) {
+    nav {
+        height: 0 !important;
+    }
+
+    nav ul {
+        position: absolute;
+        width: 300px;
+        flex-direction: column;
+        left: -240px;
+        transition: 300ms ease all;
+        top: 0;
+        z-index: 1;
+    }
+
+    nav ul figure {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        cursor: pointer;
+        margin: 10px 20px 10px 10px;
+        text-align: right;
+    }
+
+    nav ul li {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    nav ul a {
+        flex-direction: row;
+        margin-left: 20px;
+        justify-content: space-between;
+        margin-right: 13px;
+    }
+
+    .logo {
+        position: relative;
+    }
+
+}
+
+@keyframes line {
+    0% {
+        background-position-x: 400px;
+    }
+}

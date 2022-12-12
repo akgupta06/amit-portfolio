@@ -37,6 +37,11 @@ export default {
         icon: 'psychology'
       }, 
       {
+        text: 'Learning',
+        path: `${ROOT}/learning`,
+        icon: 'local_library'
+      },
+      {
         text: 'CONTACT',
         path: `${ROOT}/contact`,
         icon: 'contact_mail'

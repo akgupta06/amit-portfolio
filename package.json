@@ -8,10 +8,8 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "firebase": "^9.15.0",
-    "vue": "^3.2.45",
-    "vue-material-design-icons": "^5.1.2",
+  "dependencies": {  
+    "vue": "^3.2.45",   
     "vue-router": "^4.1.6"
   },
   "devDependencies": {

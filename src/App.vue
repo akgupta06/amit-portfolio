@@ -15,14 +15,19 @@ export default {
   },
   data: () => ({
     ROOT : '/amit-portfolio',
-    navLinks: [     
+    navLinks: [ 
+    {
+        text: 'HOME',
+        path: `${ROOT}/home`,
+        icon: 'home'
+      },    
       {
-        text: 'About',
+        text: 'ABOUT ME',
         path: `${ROOT}/about`,
         icon: 'engineering'
       }, 
       {
-        text: 'Contact',
+        text: 'CONTACT',
         path: `${ROOT}/contact`,
         icon: 'contact_mail'
       },     

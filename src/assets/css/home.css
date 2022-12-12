@@ -1,0 +1,108 @@
+.leftPanel {
+    float: left;
+    width: 50%;
+}
+
+.rightPanel {
+    float: left;
+    width: 50%;
+}
+
+.rightPanel img {
+    width: 420px;
+}
+
+.home-area {
+    position: relative;
+}
+
+.home-area .home-caption {
+    width: 100%;
+    margin-bottom: 75px;
+}
+
+.home-area .home-caption .subheading {   
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--secondary);
+    letter-spacing: 4px;   
+}
+
+.home-area .home-caption h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: 4px;      
+    margin-top: 25%;
+}
+
+.home-area .contact {    
+    display: flex;   
+    font-weight: 700;
+    font-size: 18px;
+    
+}
+
+.home-area .contact-body {
+    padding-left: 10px;
+}
+
+.home-area .contact-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: left;
+    margin-left: 20%;    
+  }
+  
+.home-area .contact-wrapper > div {
+    margin: 20px;
+  }
+
+
+.home-area .home-caption p {
+    margin-bottom: 45px;
+    padding-right: 155px;
+}
+
+.home-area .home-img {
+    float: right;
+    width: 200px;
+    height: 200px;
+}
+
+.home-area .home-img img {
+    position: relative;
+    right: -63px;
+}
+
+.home-area .home-shape {
+    position: absolute;
+    top: 13%;
+    left: 51%;
+}
+
+.portfolio-main img {
+    width: 450px;
+    height: 600px;
+    border-radius: 10%;
+}
+
+@media screen and (max-width: 759px) {
+    .leftPanel {
+        float: inherit;
+        width: 100%;
+        padding-left: 20px;
+        height: 200px;
+    }
+
+    .rightPanel {
+        float: inherit;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .rightPanel img {
+        width: 400px;
+    }
+}

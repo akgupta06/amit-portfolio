@@ -1,9 +1,16 @@
 import { createRouter, createWebHistory } from "vue-router";
+import Home from "@/views/Home.vue";
 import About from "@/views/About.vue";
 import Contact from "@/views/Contact.vue";
 
 const ROOT = '/amit-portfolio';
-const routes = [    
+const routes = [   
+    {
+        path: `${ROOT}/home`,
+        alias: [`${ROOT}/`, `/`],
+        name: "Home",
+        component: Home,
+    }, 
     {
         path: `${ROOT}/about`,
         name: "About",

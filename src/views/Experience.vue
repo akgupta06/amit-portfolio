@@ -209,6 +209,7 @@ export default {
     list-style-type: none;
     border-left: 2px solid var(--primary);
     padding: 10px 5px;
+    margin-bottom: 0%;
 }
 
 .timeline ul li {
@@ -238,6 +239,7 @@ export default {
     font-size: 1.2rem;  
     padding-top: 5px;
     font-weight: 500;
+    margin-top: 8px;
     margin-bottom: 8px;
     color: black;
 }

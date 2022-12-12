@@ -25,6 +25,11 @@ export default {
         text: 'ABOUT ME',
         path: `${ROOT}/about`,
         icon: 'engineering'
+      },
+      {
+        text: 'Experience',
+        path: `${ROOT}/experience`,
+        icon: 'work_history'
       }, 
       {
         text: 'CONTACT',

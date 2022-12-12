@@ -114,8 +114,10 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   background-clip: padding-box;
+  background-color: #d3d3d3;
   border: 1px solid #ced4da;
   border-radius: .25rem;
+  opacity: 1;  
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
@@ -126,6 +128,7 @@ body {
 
 textarea.form-control {
   height: auto;
+  height: 10rem;
 }
 
 .grid {

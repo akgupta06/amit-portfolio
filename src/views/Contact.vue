@@ -1,12 +1,14 @@
 <template>
-    <section class="workspace">
-        <h1>Contact Me</h1>
-        <div class="container">
-            <div class="row">              
+    <section class="workspace">       
+        <div class="container">           
+            <div class="row">
+                <div class="col-lg-7 offset-lg-2 col-md-8">
+                    <h1>CONTACT ME</h1>
+                </div>                
                 <div class="col-lg-7 offset-lg-2 col-md-8">
                     <form id="contact-form" class="row contact-form" action="#">
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="form-group">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="form-group">                                
                                 <input id="name" placeholder="Enter your name" class="form-control"
                                     v-model="contactForm.name">
                                 <i class="material-icons check">check_circle</i>
@@ -14,7 +16,7 @@
                                 <small>Error message</small>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6">
+                        <div class="col-xs-12 col-sm-12">
                             <div class="form-group">
                                 <input id="email" type="email" name="email" placeholder="Your email address"
                                     class="form-control" v-model="contactForm.email">
@@ -34,18 +36,9 @@
                         </div>
                         <div class="col-xs-12 col-sm-12">
                             <div class="form-group">
-                                <input id="subject" name="subject" placeholder="Enter the discussion title"
-                                    class="form-control" v-model="contactForm.subject">
-                                <i class="material-icons check">check_circle</i>
-                                <i class="material-icons error">error</i>
-                                <small>Error message</small>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12">
-                            <div class="form-group">
                                 <textarea id="message" name="message" placeholder="Write your message"
                                     class="form-control" v-model="contactForm.message">
-                  </textarea>
+                                </textarea>
                                 <i class="material-icons check">check_circle</i>
                                 <i class="material-icons error">error</i>
                                 <small>Error message</small>
@@ -53,7 +46,7 @@
                         </div>
                         <div class="col-xs-12 col-sm-12">
                             <button type="submit" class="btn button-field" @click.prevent="formSubmit">
-                                Send Message now
+                                SUBMIT
                             </button>
                         </div>
                     </form>
@@ -75,7 +68,6 @@ export default {
         this.selectors.name = document.getElementById('name');
         this.selectors.email = document.getElementById('email');
         this.selectors.phone = document.getElementById('phone');
-        this.selectors.subject = document.getElementById('subject');
         this.selectors.message = document.getElementById('message');
     },
     data: () => {
@@ -85,7 +77,6 @@ export default {
                 name: '',
                 email: '',
                 phone: '',
-                subject: '',
                 message: '',
             },
             showSubmitFeedback: false,
@@ -97,7 +88,6 @@ export default {
                 name: '',
                 email: '',
                 phone: '',
-                subject: '',
                 message: ''
             },
             submitResponse: '',
@@ -132,9 +122,8 @@ export default {
             const nameError = this.validateText(this.selectors.name, this.contactForm.name, 'Name');
             const emailError = this.validateEmail(this.selectors.email, this.contactForm.email, 'Email');
             const phoneError = this.validatePhone(this.selectors.phone, this.contactForm.phone, 'Phone');
-            const subError = this.validateText(this.selectors.subject, this.contactForm.subject, 'Subject');
             const mesError = this.validateText(this.selectors.message, this.contactForm.message, 'Message');
-            return !nameError && !emailError && !subError && !mesError && !phoneError;
+            return !nameError && !emailError && !mesError && !phoneError;
         },
 
         validateText(field, value, name) {

@@ -1,9 +1,6 @@
 <template>
     <nav>
-      <ul ref="nav">
-        <!-- <figure class="image-logo" @click="toggleNav">
-          <img src="@/assets/logo.png" alt="Amit Portfolio" class="logo"/>
-        </figure> -->
+      <ul ref="nav">     
         <li v-for="(link, index) in navLinks" :key="index">
           <router-link :to="link.path" style="color: var(--primary)">
             {{ link.text }}

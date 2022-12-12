@@ -4,7 +4,8 @@
             <div class="leftPanel">
                 <div class="home-caption">
                     <h1>HELLO, I'M AMIT GUPTA</h1>
-                    <span class="subheading">Software Engineer, META</span>
+                    <span class="subheading">I’m a full stack software engineer, seasoned leader and technologist with extensive experience in finance and payment industry.
+                        I am currently working as Software Engineer Lead in META</span>
                 </div>
                 <div class="contact-wrapper">
                     <div class="contact">

@@ -3,6 +3,7 @@ import Home from "@/views/Home.vue";
 import About from "@/views/About.vue";
 import Contact from "@/views/Contact.vue";
 import Experience from "@/views/Experience.vue";
+import Skills from "@/views/Skills.vue";
 
 const ROOT = '/amit-portfolio';
 const routes = [   
@@ -22,6 +23,11 @@ const routes = [
         name: "Experience",
         component: Experience,
     }, 
+    {
+        path: `${ROOT}/skills`,
+        name: "Skills",
+        component: Skills,
+    },
     {
         path: `${ROOT}/contact`,
         name: "Contact",

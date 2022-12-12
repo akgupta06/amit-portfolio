@@ -32,6 +32,11 @@ export default {
         icon: 'work_history'
       }, 
       {
+        text: 'Skills',
+        path: `${ROOT}/skills`,
+        icon: 'psychology'
+      }, 
+      {
         text: 'CONTACT',
         path: `${ROOT}/contact`,
         icon: 'contact_mail'

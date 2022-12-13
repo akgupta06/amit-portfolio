@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Navigation :nav-links="navLinks"/>
-    <router-view/>
+    <Navigation :nav-links="navLinks" />
+    <router-view />
   </div>
 </template>
 
@@ -14,13 +14,13 @@ export default {
     Navigation
   },
   data: () => ({
-    ROOT : '/amit-portfolio',
-    navLinks: [ 
-    {
+    ROOT: '/amit-portfolio',
+    navLinks: [
+      {
         text: 'HOME',
         path: `${ROOT}/home`,
         icon: 'home'
-      },    
+      },
       {
         text: 'ABOUT ME',
         path: `${ROOT}/about`,
@@ -30,12 +30,12 @@ export default {
         text: 'Experience',
         path: `${ROOT}/experience`,
         icon: 'work_history'
-      }, 
+      },
       {
         text: 'Skills',
         path: `${ROOT}/skills`,
         icon: 'psychology'
-      }, 
+      },
       {
         text: 'Learning',
         path: `${ROOT}/learning`,
@@ -45,7 +45,7 @@ export default {
         text: 'CONTACT',
         path: `${ROOT}/contact`,
         icon: 'contact_mail'
-      },     
+      },
     ]
   })
 }
@@ -66,5 +66,4 @@ figure {
   text-align: center;
   color: var(--text-color);
 }
-
 </style>

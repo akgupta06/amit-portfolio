@@ -131,7 +131,7 @@
                             <br> <br> <br>
                             <li>
                                 <div class="content align-left">
-                                    <a href="https://us.nttdata.com/" target="_blank">
+                                    <a href="https://www.infosys.com/" target="_blank">
                                         <h3>Infosys Technologies</h3>
                                         <h5>Software Engineer</h5>
                                         <div class="grey">Jun 2004 - Dec 2005</div>

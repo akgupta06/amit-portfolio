@@ -105,7 +105,7 @@ export default {
                         console.log(result);
                         if (result.name) {
                             this.responseColor = 'var(--primary)';
-                            this.submitResponse = `Message Id : ${result.name}. Thank you for contacting me. Your message is received, I will connect with you at the earliest.`;
+                            this.submitResponse = `Thank you for contacting me. Your message is received, I will connect with you at the earliest.`;
                         } else {
                             this.responseColor = 'var(--error)';
                             this.submitResponse = 'Oops, its not your fault. Its me!. Seems like Firebase rules is not relaxed. Please try again later';
